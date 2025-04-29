@@ -6,9 +6,11 @@ using namespace std;
 int main() {
     
         int lado1, lado2, lado3;
+    
         // Inicio :3
         cout << "Bienvenido :D" << endl;
         cout << "---------------" << endl;
+    
         // Ingreso de valores de los lados :p
         cout << "Ingrese el primer número:..." << endl;
         cin >> lado1;
@@ -16,6 +18,7 @@ int main() {
         cin >> lado2;
         cout << "Ingrese el tercer número:..." << endl;
         cin >> lado3;
+    
         // Condiciones para determinar el tipo de triángulo
         bool todos_iguales = (lado1 == lado2 && lado2 == lado3 && lado3 == lado1);
         bool dos_iguales = (lado1 == lado2 && lado3 != lado1) || 
@@ -40,6 +43,7 @@ int main() {
             cout << "Error: Los números ingresados no forman un triángulo" << endl;
             cout << endl;
         }
+    
     // Fin del programa:P
     return 0;
 }
