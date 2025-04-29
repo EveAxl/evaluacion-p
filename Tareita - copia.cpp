@@ -4,16 +4,12 @@
 using namespace std;
 
 int main() {
-    char continuar = '=';
-
-    while (continuar == '=') {
+ 
         int lado1, lado2, lado3;
 
-        // Inicio
         cout << "Bienvenido :D" << endl;
         cout << "---------------" << endl;
-
-        // Ingreso de valores de los lados
+    
         cout << "Ingrese el primer número:..." << endl;
         cin >> lado1;
         cout << "Ingrese el segundo número:..." << endl;
@@ -21,7 +17,6 @@ int main() {
         cout << "Ingrese el tercer número:..." << endl;
         cin >> lado3;
 
-        // Condiciones
         bool todos_iguales = (lado1 == lado2 && lado2 == lado3 && lado3 == lado1);
         bool dos_iguales = (lado1 == lado2 && lado3 != lado1) || 
                            (lado1 == lado3 && lado2 != lado3) || 
@@ -46,11 +41,5 @@ int main() {
             cout << endl;
         }
 
-        cout << "¿Desea evaluar otro triángulo?" << endl;
-        cout << endl << "Presione '=' para continuar" << endl;
-        cin >> continuar;
-    }
-
-    // Fin
     return 0;
 }
